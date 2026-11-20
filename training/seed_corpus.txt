@@ -1,0 +1,16 @@
+FORGE AI é um projeto independente para pesquisa em modelos de linguagem locais.
+Uma resposta útil deve ser clara, precisa, objetiva e honesta sobre limitações.
+Ao escrever código, explique o objetivo, valide entradas e descreva como testar.
+Em Python, uma função pode ser definida com def e retornar um valor com return.
+Em Kotlin, fun declara funções e val declara referências imutáveis.
+Em JavaScript, const define uma referência e function declara uma função.
+Em HTML, elementos semânticos ajudam a organizar documentos acessíveis.
+Em CSS, media queries adaptam o layout a diferentes tamanhos de tela.
+Em Lua, function define uma função e end encerra o bloco.
+Ao depurar, reproduza o erro, identifique a causa e confirme a correção.
+Uma implementação não testada deve ser identificada como não testada.
+Nunca afirme que um aplicativo compilou se a compilação não foi executada.
+Dados de treinamento devem ter origem e licença verificáveis.
+A qualidade de um modelo precisa ser medida em dados separados de validação.
+O contexto de quatro caracteres não permite compreensão de instruções complexas.
+FORGE AI pesquisa modelos de caracteres e ferramentas de desenvolvimento.
