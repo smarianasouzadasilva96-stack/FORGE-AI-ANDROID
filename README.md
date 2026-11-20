@@ -22,3 +22,8 @@ A implementação Kotlin suporta o Transformer byte-level com LayerNorm, atenç�
 - O APK **não foi compilado ou testado em aparelho neste ambiente**.
 - A saída do modelo pequeno é experimental e pode não ser coerente.
 - Chaves de proprietário são locais e não fornecem autorização de servidor.
+
+
+## Estado do repositório (2026-11-20)
+
+A estrutura de código Android (`app/`), treinamento (`training/`), configuração (`config/`) e workflow `.github/workflows/android.yml` foi reorganizada. **Os arquivos binários de pesos ainda não foram publicados**: `app/src/main/assets/forge-transformer.frg` e `app/src/main/assets/forge-seed-weights.bin`. O aplicativo deve informar que o modelo não está treinado quando não houver pesos, e os templates locais continuam disponíveis. O workflow de APK foi adicionado, mas seu resultado ainda precisa ser verificado. Para habilitar inferência Transformer, adicionar os pesos exportados do projeto em `app/src/main/assets/`.
