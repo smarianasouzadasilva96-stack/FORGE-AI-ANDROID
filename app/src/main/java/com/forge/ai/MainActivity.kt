@@ -55,7 +55,7 @@ class MainActivity : Activity() {
         maxGeneration = getPreferences(MODE_PRIVATE).getInt("max_generation", 280)
         usedChars = getPreferences(MODE_PRIVATE).getLong("used_chars", 0L)
         window.statusBarColor = background; window.navigationBarColor = background
-        val root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setBackgroundColor(background); setPadding(dp(14), dp(12), dp(14), dp(12)) }
+        val root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setBackgroundColor(this@MainActivity.background); setPadding(dp(14), dp(12), dp(14), dp(12)) }
         root.addView(text("◈  FORGE AI  ∞", 23f, primary).apply { typeface = Typeface.DEFAULT_BOLD })
         root.addView(text("TRANSFORMER LOCAL  •  SEM API  •  MODELO PEQUENO", 10f, secondary).apply { setPadding(0, dp(2), 0, dp(12)) })
         val tools = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
