@@ -43,7 +43,7 @@ class MainActivity : Activity() {
         this.text = value; textSize = size; setTextColor(color); setLineSpacing(dp(3).toFloat(), 1f)
     }
     private fun action(label: String, click: () -> Unit) = TextView(this).apply {
-        text = label; textSize = 12f; setTextColor(background); gravity = Gravity.CENTER
+        text = label; textSize = 12f; setTextColor(this@MainActivity.background); gravity = Gravity.CENTER
         typeface = Typeface.DEFAULT_BOLD; background = bg(primary, 12)
         setPadding(dp(10), dp(12), dp(10), dp(12)); setOnClickListener { click() }
     }
@@ -69,7 +69,7 @@ class MainActivity : Activity() {
         scroller.addView(messages)
         root.addView(scroller, LinearLayout.LayoutParams(-1, 0, 1f))
         val row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL; background = bg(surface); setPadding(dp(10), dp(6), dp(6), dp(6)); gravity = Gravity.CENTER_VERTICAL }
-        input = EditText(this).apply { hint = "Pergunte ou peça um exemplo de código..."; setHintTextColor(secondary); setTextColor(foreground); textSize = 14f; background = null; maxLines = 4 }
+        input = EditText(this).apply { hint = "Pergunte ou peça um exemplo de código..."; setHintTextColor(secondary); setTextColor(this@MainActivity.foreground); textSize = 14f; background = null; maxLines = 4 }
         row.addView(input, LinearLayout.LayoutParams(0, -2, 1f))
         row.addView(action("ENVIAR") { send() })
         root.addView(row)
